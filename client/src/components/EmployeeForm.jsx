@@ -95,7 +95,7 @@ function EmployeeForm() {
 
     try {
       // Replace with your API endpoint
-      const url = 'http://localhost:3000/employee';
+      const url = 'http://localhost:8000/employee';
       const response = await axios.post(url, formData);
       console.log('Form submitted successfully:', response.data);
       alert('Form submitted successfully!');

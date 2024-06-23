@@ -5,7 +5,7 @@ async function connectToDB() {
   try {
       const db = mysql.createConnection({
           host: process.env.HOST,  // Change as needed
-          user: process.env.USER,       // Change as needed
+          user: process.env.PERSON,       // Change as needed
           password: process.env.PASSWORD,       // Change as needed
           database: process.env.DATABASE    // Change as needed
         });

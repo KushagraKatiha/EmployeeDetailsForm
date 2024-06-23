@@ -8,7 +8,7 @@ const DataDisplay = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/users'); // Replace with your backend endpoint
+        const response = await axios.get('http://localhost:8000/users'); // Replace with your backend endpoint
         setEmployeeData(response.data);
         setLoading(false);
       } catch (error) {
@@ -21,7 +21,7 @@ const DataDisplay = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>; // Optional loading indicator
+    return <p className='text-white'>Loading...</p>; // Optional loading indicator
   }
 
   return (

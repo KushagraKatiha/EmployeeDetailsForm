@@ -11,7 +11,7 @@ function InputField({ label, type = 'text', name, value, onChange, placeholder, 
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className={`p-1 border-2 border-black rounded ${style}`}
+        className={`p-1  border-2 border-black rounded ${style}`}
       />
     </div>
   );
